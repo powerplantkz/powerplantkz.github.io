@@ -4,11 +4,9 @@ body{
 a {
     text-decoration: none;
     color: #a64109;
-    font-size: 8vmax;
 }
 a:hover {
     text-decoration: none;
-    tab-size: 120px;
 }
 .item {
     background: linear-gradient(to bottom,#a6a6a6, #5f6365);
