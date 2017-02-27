@@ -8,5 +8,10 @@ a {
 a:hover {
     text-decoration: none;
     tab-size: 120px;
-
+}
+.item {
+    background: linear-gradient(to bottom,#a6a6a6, #5f6365);
+    border-radius: 3px;
+    margin: 5px;
+    text-align: left;
 }
