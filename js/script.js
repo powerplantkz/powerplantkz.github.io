@@ -5,7 +5,7 @@ function currentDate() {
         day: 'numeric',
         timezone: 'UTC'
     };
-    var date = document.getElementById("size").innerHTML = new Date().toLocaleString("ru", options);
+    var date = document.getElementById("currentDate").innerHTML = new Date().toLocaleString("ru", options);
 }
 currentDate();
 
