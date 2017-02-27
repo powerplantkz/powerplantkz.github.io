@@ -4,6 +4,7 @@ body{
 a {
     text-decoration: none;
     color: #a64109;
+    font-size: 8vmax;
 }
 a:hover {
     text-decoration: none;
