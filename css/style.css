@@ -8,18 +8,24 @@ a {
 }
 a:hover {
     text-decoration: none;
+
 }
 .item {
-    background: linear-gradient(to bottom,#a6a6a6, #5f6365);
-    border-radius: 3px;
-    margin-top: 2%;
+    background: linear-gradient(to bottom, #999999, #5f6365);
+    border-radius: 3%;
     text-align: left;
+    margin-bottom: 3%;
+    margin-right: 5%;
 }
 .col-xs-12{
     padding: 5px 5px 5px 5px;
 }
 .link a {
-    display: block;
-    height: 100%;
-    text-align: left ;
+     display: block;
+     height: 100%;
+     text-align: left ;
+ }
+
+p{
+    font-size: 18px;
 }
