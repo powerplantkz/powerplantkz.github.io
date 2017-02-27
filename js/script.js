@@ -10,11 +10,13 @@ function currentDate() {
 
 function fontSizeOnDevices() {
     var width = screen.width;
-    if (width < 480 || width > 320) var text = document.getElementsByTagName("a");
+    var numberWidth = document.getElementById("width").innerHTML = width;
+
+
 }
 
 currentDate();
-
+fontSizeOnDevices();
 
 
 
