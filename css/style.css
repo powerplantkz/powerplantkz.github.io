@@ -1,1 +1,12 @@
+body{
+    background: #a6a6a6;
+}
+a {
+    text-decoration: none;
+    color: #a64109;
+}
+a:hover {
+    text-decoration: none;
+    tab-size: 120px;
 
+}
