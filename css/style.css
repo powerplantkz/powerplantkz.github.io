@@ -30,3 +30,6 @@ a:hover {
 p{
     font-size: 18px;
 }
+#number {
+    border-radius: 3px;
+}
