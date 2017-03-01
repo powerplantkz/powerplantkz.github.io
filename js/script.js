@@ -5,8 +5,12 @@ function currentDate() {
         day: 'numeric',
         timezone: 'UTC'
     };
-    var date = document.getElementById("currentDate").innerHTML = new Date().toLocaleString("ru", options);
-}function lastDate() {
+    var date = document.getElementById("currentDate").innerHTML = "Сегодня " + new Date().toLocaleString("ru", options);
+}
+
+
+
+function lastDate() {
     var options = {
         year: 'numeric',
         month: 'numeric',
