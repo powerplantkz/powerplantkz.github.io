@@ -14,7 +14,8 @@
     <script>
         $(function () {
             $("#accordion").accordion({
-                collapsible: true
+                collapsible: true,
+                heightStyle: false,
             });
         });
     </script>
@@ -22,8 +23,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
 <p id="currentDate"></p>
 <label for="number">СМЕНА</label>
 <select name="number" id="number">
@@ -34,45 +33,41 @@
 </select>
 <div id="accordion">
     <h3>Общая часть</h3>
-    <div>
+    <div class="content">
         <p><a href="pages/_1.html">Общая часть</a></p>
-
+        <p><a href="pages/_1.html">Общая часть</a></p>
+        <p><a href="pages/_1.html">Общая часть</a></p>
+        <p><a href="pages/_1.html">Общая часть</a></p>
+        <p><a href="pages/_1.html">Общая часть</a></p>
     </div>
     <h3>Теплотехника</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Электротехника</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Материаловедение</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Назначение, Устройство и работа оборудования блоков</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Тепловая защита КИПиА</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Охрана труда, Промышленная безопасность,<br> Промсанитария и
         Пожарная безопасность</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Правила безопасности в газовом хозяйстве</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Вопросы по экономике</h3>
     <div>
@@ -83,19 +78,17 @@
         деятельности</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Вопросы правового всеобуча</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
     <h3>Интегрированная система менеджмента (ИСМ)</h3>
     <div>
         <p><a href="pages/_1.html">Общая часть</a></p>
-
     </div>
+</div>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
