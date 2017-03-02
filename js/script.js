@@ -1,29 +1,7 @@
-function currentDate() {
-    var options = {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-        timezone: 'UTC'
-    };
-    var date = document.getElementById("currentDate").innerHTML = "Сегодня " + new Date().toLocaleString("ru", options);
-}
+document.getElementById("currentDate").innerHTML = "Сегодня " + new Date().toLocaleDateString();
+var time = new Date().toLocaleTimeString();
+var dayNight = new Date().getHours();
+if (dayNight > 8 && dayNight < 20) alert("day");
+if (dayNight > 20 && dayNight < 8) alert("night");
 
-
-
-function lastDate() {
-    var options = {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-        timezone: 'UTC'
-    };
-    var date = document.getElementById("lastDate").innerHTML = new Date().toLocaleString("ru", options);
-}
-currentDate();
-lastDate();
-
-
-
-
-
-
+var A, B, C, D;
