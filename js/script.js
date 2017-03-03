@@ -1,22 +1,33 @@
-var year = [366];
+function getNumberCurrentDayInYear() {
+    var currentData = new Date();
+    var beginYear = new Date(currentData.getFullYear(), 0, 0);
+    var diff = currentData - beginYear;
+    var oneDay = 1000 * 60 * 60 * 24;
+    var numberDayInYear = Math.floor(diff / oneDay);
+    return numberDayInYear
+}
 
-var dayInYear = {
-    data: undefined,
-    crewWorkInDay: undefined,
-    crewWorkInNight: undefined,
-    item1: undefined,
-    item2: undefined,
-    item3: undefined,
-    item4: undefined
-};
+var scheduleOnEndYear = [3, 2, 1, 4];
+var crewName = ["А", "Б", "В", "Г"];
 
-var currentData = new Date();
-var beginYear = new Date(currentData.getFullYear(), 0, 0);
-var diff = currentData - beginYear;
-var oneDay = 1000 * 60 * 60 * 24;
-var numberDayInYear = Math.floor(diff / oneDay);
+var condition = scheduleOnEndYear[0];
 
-console.log("today " + numberDayInYear + " numberDayInYear in year");
+for (var i = 1; i < getNumberCurrentDayInYear() + 1; i++) {
+    console.log("day " + i + " " + condition);
+    if (i == 1) {
+        console.log(condition);
+        if (condition === 1) {condition++;continue}
+        if (condition === 2) {condition++;continue}
+        if (condition === 3) {condition++;continue}
+        if (condition === 4) {condition=1;continue}
+        continue;
+    }
+    if (condition === 1) {condition++;continue}
+    if (condition === 2) {condition++;continue}
+    if (condition === 3) {condition++;continue}
+    if (condition === 4) {condition=1;continue}
+    //console.log(condition);
+}
 
 
 var dayNight = new Date().getHours();
