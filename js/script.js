@@ -6,29 +6,55 @@ function getNumberCurrentDayInYear() {
     var numberDayInYear = Math.floor(diff / oneDay);
     return numberDayInYear
 }
-
-var scheduleOnEndYear = [3, 2, 1, 4];
-var crewName = ["А", "Б", "В", "Г"];
-
-var condition = scheduleOnEndYear[0];
-
-for (var i = 1; i < getNumberCurrentDayInYear() + 1; i++) {
-    console.log("day " + i + " " + condition);
-    if (i == 1) {
-        console.log(condition);
-        if (condition === 1) {condition++;continue}
-        if (condition === 2) {condition++;continue}
-        if (condition === 3) {condition++;continue}
-        if (condition === 4) {condition=1;continue}
-        continue;
+function getConditions() {
+    for (var i = 1; i < getNumberCurrentDayInYear(); i++) {
+        //console.log("day " + i + " " + conditionCrew + " " + crewConditionString[conditionCrew - 1]);
+        if (i == 1) {
+            if (conditionCrew === 1) {
+                conditionCrew++;
+                continue
+            }
+            if (conditionCrew === 2) {
+                conditionCrew++;
+                continue
+            }
+            if (conditionCrew === 3) {
+                conditionCrew++;
+                continue
+            }
+            if (conditionCrew === 4) {
+                conditionCrew = 1;
+                continue
+            }
+            continue;
+        }
+        if (conditionCrew === 1) {
+            conditionCrew++;
+            continue
+        }
+        if (conditionCrew === 2) {
+            conditionCrew++;
+            continue
+        }
+        if (conditionCrew === 3) {
+            conditionCrew++;
+            continue
+        }
+        if (conditionCrew === 4) conditionCrew = 1;
     }
-    if (condition === 1) {condition++;continue}
-    if (condition === 2) {condition++;continue}
-    if (condition === 3) {condition++;continue}
-    if (condition === 4) {condition=1;continue}
-    //console.log(condition);
+    return conditionCrew;
 }
 
+var scheduleOnEndYear = [3, 2, 1, 4];
+var crewNameString = ["А", "Б", "В", "Г"];
+var crewConditionString = ["день", "ночь", "отсыпной", "выходной"];
+var crewsCondition = [];
+
+for (var crew = 0; crew < 4; crew++) {
+    var conditionCrew = scheduleOnEndYear[crew];
+    crewsCondition[crew] = getConditions();
+}
+console.log(crewsCondition);
 
 var dayNight = new Date().getHours();
 if (dayNight < 8 || dayNight > 20) dayNight = "ночь";
