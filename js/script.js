@@ -44,6 +44,20 @@ function getConditions() {
     }
     return conditionCrew;
 }
+function getCrewName() {
+    var crewName;
+    if (dayNight === "ночь") {
+        for (var i = 0; i < 4; i++) {
+            if (crewsCondition[i] === 2) crewName = crewNameString[i];
+        }
+    }
+    if (dayNight === "день") {
+        for (var j = 0; j < 4; j++) {
+            if (crewsCondition[j] === 1) crewName = crewNameString[j];
+        }
+    }
+    return crewName;
+}
 
 var scheduleOnEndYear = [3, 2, 1, 4];
 var crewNameString = ["А", "Б", "В", "Г"];
@@ -59,4 +73,42 @@ console.log(crewsCondition);
 var dayNight = new Date().getHours();
 if (dayNight < 8 || dayNight > 20) dayNight = "ночь";
 if (dayNight > 8 || dayNight < 20) dayNight = "день";
-document.getElementById("currentDate").innerHTML = "Сегодня " + new Date().toLocaleDateString() + " в " + dayNight + " смена ";
+document.getElementById("currentDate").innerHTML =
+    "Сегодня " + new Date().toLocaleDateString() + " в " + dayNight + " смена " + getCrewName();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

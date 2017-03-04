@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b5e1b52-bca5-4ed9-ba92-bb8262f1241b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +21,12 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
               <folding>
                 <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
                 <element signature="n#!!block;n#getConditions#0" expanded="false" />
+                <element signature="n#!!block;n#getCrewName#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -246,7 +248,7 @@
       <workItem from="1488454539358" duration="1181000" />
       <workItem from="1488455754625" duration="11565000" />
       <workItem from="1488517693986" duration="15460000" />
-      <workItem from="1488535133078" duration="3256000" />
+      <workItem from="1488535133078" duration="5197000" />
     </task>
     <task id="LOCAL-00001" summary="26">
       <created>1488456042033</created>
@@ -311,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488538737243</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="32">
+      <created>1488538750064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1488538750064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90553000" />
+    <option name="totallyTimeSpent" value="92494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -374,6 +383,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,6 +420,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,6 +457,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -489,6 +501,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -532,6 +545,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,6 +589,7 @@
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,11 +745,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
           <folding>
             <element signature="n#!!block;n#getNumberCurrentDayInYear#0" expanded="false" />
             <element signature="n#!!block;n#getConditions#0" expanded="false" />
+            <element signature="n#!!block;n#getCrewName#0" expanded="false" />
           </folding>
         </state>
       </provider>
